@@ -1,9 +1,127 @@
-patient,sample,platform,readgroup,fq1,fq2
-case01,normal,ILLUMINA,rg1,data/tcrb-data/TCRBOA1-N-WEX.R1.fq,data/tcrb-data/TCRBOA1-N-WEX.R2.fq
-case01,tumor,ILLUMINA,rg1,data/tcrb-data/TCRBOA1-T-WEX.R1.fq,data/tcrb-data/TCRBOA1-T-WEX.R2.fq
-patient101,normal,ILLUMINA,rg1,data/multiplex-reads/CTR101-1_1.short.fastq.gz,data/multiplex-reads/CTR101-1_2.short.fastq.gz
-patient101,normal,ILLUMINA,rg2,data/multiplex-reads/CTR101-2_1.short.fastq.gz,data/multiplex-reads/CTR101-2_2.short.fastq.gz
-patient101,normal,ILLUMINA,rg3,data/multiplex-reads/CTR101-3_1.short.fastq.gz,data/multiplex-reads/CTR101-3_2.short.fastq.gz
-patient101,tumor,ILLUMINA,rg1,data/multiplex-reads/T101-1_1.short.fastq.gz,data/multiplex-reads/T101-1_2.short.fastq.gz
-patient101,tumor,ILLUMINA,rg2,data/multiplex-reads/T101-2_1.short.fastq.gz,data/multiplex-reads/T101-2_2.short.fastq.gz
-patient101,tumor,ILLUMINA,rg3,data/multiplex-reads/T101-3_1.short.fastq.gz,data/multiplex-reads/T101-3_2.short.fastq.gz
+general.patient,patient,sample.name,sample,readgroup,differentiation,fq1,fq2,cohort,platform
+patient101,patient101,CTR101,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR101-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR101-1_2.fastq.gz,Lee,ILLUMINA
+patient101,patient101,CTR101,normal,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR101-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR101-2_2.fastq.gz,Lee,ILLUMINA
+patient101,patient101,CTR101,normal,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR101-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR101-3_2.fastq.gz,Lee,ILLUMINA
+patient102,patient102,CTR102,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR102-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR102-1_2.fastq.gz,Lee,ILLUMINA
+patient102,patient102,CTR102,normal,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR102-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR102-2_2.fastq.gz,Lee,ILLUMINA
+patient102,patient102,CTR102,normal,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR102-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR102-3_2.fastq.gz,Lee,ILLUMINA
+patient104,patient104,CTR104,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR104-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR104-1_2.fastq.gz,Lee,ILLUMINA
+patient104,patient104,CTR104,normal,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR104-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR104-2_2.fastq.gz,Lee,ILLUMINA
+patient104,patient104,CTR104,normal,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR104-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR104-3_2.fastq.gz,Lee,ILLUMINA
+patient106,patient106,CTR106,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR106-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR106-1_2.fastq.gz,Lee,ILLUMINA
+patient106,patient106,CTR106,normal,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR106-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR106-2_2.fastq.gz,Lee,ILLUMINA
+patient106,patient106,CTR106,normal,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR106-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR106-3_2.fastq.gz,Lee,ILLUMINA
+patient107,patient107,CTR107,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR107-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR107-1_2.fastq.gz,Lee,ILLUMINA
+patient107,patient107,CTR107,normal,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR107-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR107-2_2.fastq.gz,Lee,ILLUMINA
+patient107,patient107,CTR107,normal,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR107-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR107-3_2.fastq.gz,Lee,ILLUMINA
+patient119,patient119,CTR119,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR119_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR119_2.fastq.gz,Lee,ILLUMINA
+patient126,patient126,CTR126,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR126_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR126_2.fastq.gz,Lee,ILLUMINA
+patient203,patient203,CTR203,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR203_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR203_2.fastq.gz,Lee,ILLUMINA
+patient205,patient205,CTR205,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR205_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR205_2.fastq.gz,Lee,ILLUMINA
+patient206,patient206,CTR206,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR206_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR206_2.fastq.gz,Lee,ILLUMINA
+patient238,patient238,CTR238,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR238_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR238_2.fastq.gz,Lee,ILLUMINA
+patient247,patient247,CTR247,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR247_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR247_2.fastq.gz,Lee,ILLUMINA
+patient248,patient248,CTR248,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR248_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR248_2.fastq.gz,Lee,ILLUMINA
+patient250,patient250,CTR250,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR250_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR250_2.fastq.gz,Lee,ILLUMINA
+patient251,patient251,CTR251,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR251_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR251_2.fastq.gz,Lee,ILLUMINA
+patient252,patient252,CTR252,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR252_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR252_2.fastq.gz,Lee,ILLUMINA
+patient253,patient253,CTR253,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR253_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR253_2.fastq.gz,Lee,ILLUMINA
+patient500,patient500,CTR500,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR500_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR500_2.fastq.gz,Lee,ILLUMINA
+patient501,patient501,CTR501,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR501_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR501_2.fastq.gz,Lee,ILLUMINA
+patient502,patient502,CTR502,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR502_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR502_2.fastq.gz,Lee,ILLUMINA
+patient503,patient503,CTR503,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR503_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR503_2.fastq.gz,Lee,ILLUMINA
+patient505,patient505,CTR505,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR505_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR505_2.fastq.gz,Lee,ILLUMINA
+patient506,patient506,CTR506,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR506_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR506_2.fastq.gz,Lee,ILLUMINA
+patient508,patient508,CTR508,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR508_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR508_2.fastq.gz,Lee,ILLUMINA
+patient509,patient509,CTR509,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR509_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR509_2.fastq.gz,Lee,ILLUMINA
+patient510,patient510,CTR510,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR510_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR510_2.fastq.gz,Lee,ILLUMINA
+patient512,patient512,CTR512,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR512_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR512_2.fastq.gz,Lee,ILLUMINA
+patient514,patient514,CTR514,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR514_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR514_2.fastq.gz,Lee,ILLUMINA
+patient515,patient515,CTR515,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR515_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR515_2.fastq.gz,Lee,ILLUMINA
+patient516,patient516,CTR516,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR516_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR516_2.fastq.gz,Lee,ILLUMINA
+patient517,patient517,CTR517,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR517_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR517_2.fastq.gz,Lee,ILLUMINA
+patient518,patient518,CTR518,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR518_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR518_2.fastq.gz,Lee,ILLUMINA
+patient520,patient520,CTR520,normal,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/CTR520_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTR520_2.fastq.gz,Lee,ILLUMINA
+patient1,patient1-PD,CTRPD1,normal,A470031,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD1_2.fastq.gz,South,ILLUMINA
+patient10,patient10-PD,CTRPD10,normal,A470040,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD10_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD10_2.fastq.gz,South,ILLUMINA
+patient2,patient2-PD,CTRPD2,normal,A470032,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD2_2.fastq.gz,South,ILLUMINA
+patient3,patient3-PD,CTRPD3,normal,A470033,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD3_2.fastq.gz,South,ILLUMINA
+patient4,patient4-PD,CTRPD4,normal,A470034,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD4_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD4_2.fastq.gz,South,ILLUMINA
+patient5,patient5-PD,CTRPD5,normal,A470035,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD5_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD5_2.fastq.gz,South,ILLUMINA
+patient6,patient6-PD,CTRPD6,normal,A470036,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD6_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD6_2.fastq.gz,South,ILLUMINA
+patient7,patient7-PD,CTRPD7,normal,A470037,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD7_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD7_2.fastq.gz,South,ILLUMINA
+patient8,patient8-PD,CTRPD8,normal,A470038,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD8_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD8_2.fastq.gz,South,ILLUMINA
+patient9,patient9-PD,CTRPD9,normal,A470039,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD9_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRPD9_2.fastq.gz,South,ILLUMINA
+patient1,patient1-WD,CTRWD1,normal,A470011,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD1_2.fastq.gz,South,ILLUMINA
+patient10,patient10-WD,CTRWD10,normal,A470020,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD10_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD10_2.fastq.gz,South,ILLUMINA
+patient2,patient2-WD,CTRWD2,normal,A470012,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD2_2.fastq.gz,South,ILLUMINA
+patient3,patient3-WD,CTRWD3,normal,A470013,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD3_2.fastq.gz,South,ILLUMINA
+patient4,patient4-WD,CTRWD4,normal,A470014,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD4_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD4_2.fastq.gz,South,ILLUMINA
+patient5,patient5-WD,CTRWD5,normal,A470015,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD5_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD5_2.fastq.gz,South,ILLUMINA
+patient6,patient6-WD,CTRWD6,normal,A470016,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD6_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD6_2.fastq.gz,South,ILLUMINA
+patient7,patient7-WD,CTRWD7,normal,A470017,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD7_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD7_2.fastq.gz,South,ILLUMINA
+patient8,patient8-WD,CTRWD8,normal,A470018,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD8_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD8_2.fastq.gz,South,ILLUMINA
+patient9,patient9-WD,CTRWD9,normal,A470019,Well,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD9_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/CTRWD9_2.fastq.gz,South,ILLUMINA
+patient101,patient101,T101,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T101-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T101-1_2.fastq.gz,Lee,ILLUMINA
+patient101,patient101,T101,tumor,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T101-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T101-2_2.fastq.gz,Lee,ILLUMINA
+patient101,patient101,T101,tumor,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T101-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T101-3_2.fastq.gz,Lee,ILLUMINA
+patient102,patient102,T102,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T102-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T102-1_2.fastq.gz,Lee,ILLUMINA
+patient102,patient102,T102,tumor,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T102-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T102-2_2.fastq.gz,Lee,ILLUMINA
+patient102,patient102,T102,tumor,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T102-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T102-3_2.fastq.gz,Lee,ILLUMINA
+patient104,patient104,T104,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T104-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T104-1_2.fastq.gz,Lee,ILLUMINA
+patient104,patient104,T104,tumor,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T104-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T104-2_2.fastq.gz,Lee,ILLUMINA
+patient104,patient104,T104,tumor,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T104-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T104-3_2.fastq.gz,Lee,ILLUMINA
+patient106,patient106,T106,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T106-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T106-1_2.fastq.gz,Lee,ILLUMINA
+patient106,patient106,T106,tumor,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T106-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T106-2_2.fastq.gz,Lee,ILLUMINA
+patient106,patient106,T106,tumor,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T106-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T106-3_2.fastq.gz,Lee,ILLUMINA
+patient107,patient107,T107,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T107-1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T107-1_2.fastq.gz,Lee,ILLUMINA
+patient107,patient107,T107,tumor,rg2,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T107-2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T107-2_2.fastq.gz,Lee,ILLUMINA
+patient107,patient107,T107,tumor,rg3,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T107-3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T107-3_2.fastq.gz,Lee,ILLUMINA
+patient119,patient119,T119,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T119_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T119_2.fastq.gz,Lee,ILLUMINA
+patient126,patient126,T126,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T126_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T126_2.fastq.gz,Lee,ILLUMINA
+patient203,patient203,T203,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T203_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T203_2.fastq.gz,Lee,ILLUMINA
+patient205,patient205,T205,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T205_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T205_2.fastq.gz,Lee,ILLUMINA
+patient206,patient206,T206,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T206_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T206_2.fastq.gz,Lee,ILLUMINA
+patient238,patient238,T238,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T238_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T238_2.fastq.gz,Lee,ILLUMINA
+patient247,patient247,T247,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T247_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T247_2.fastq.gz,Lee,ILLUMINA
+patient248,patient248,T248,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T248_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T248_2.fastq.gz,Lee,ILLUMINA
+patient250,patient250,T250,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T250_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T250_2.fastq.gz,Lee,ILLUMINA
+patient251,patient251,T251,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T251_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T251_2.fastq.gz,Lee,ILLUMINA
+patient252,patient252,T252,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T252_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T252_2.fastq.gz,Lee,ILLUMINA
+patient253,patient253,T253,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T253_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T253_2.fastq.gz,Lee,ILLUMINA
+patient500,patient500,T500,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T500_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T500_2.fastq.gz,Lee,ILLUMINA
+patient501,patient501,T501,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T501_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T501_2.fastq.gz,Lee,ILLUMINA
+patient502,patient502,T502,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T502_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T502_2.fastq.gz,Lee,ILLUMINA
+patient503,patient503,T503,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T503_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T503_2.fastq.gz,Lee,ILLUMINA
+patient505,patient505,T505,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T505_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T505_2.fastq.gz,Lee,ILLUMINA
+patient506,patient506,T506,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T506_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T506_2.fastq.gz,Lee,ILLUMINA
+patient508,patient508,T508,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T508_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T508_2.fastq.gz,Lee,ILLUMINA
+patient509,patient509,T509,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T509_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T509_2.fastq.gz,Lee,ILLUMINA
+patient510,patient510,T510,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T510_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T510_2.fastq.gz,Lee,ILLUMINA
+patient512,patient512,T512,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T512_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T512_2.fastq.gz,Lee,ILLUMINA
+patient514,patient514,T514,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T514_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T514_2.fastq.gz,Lee,ILLUMINA
+patient515,patient515,T515,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T515_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T515_2.fastq.gz,Lee,ILLUMINA
+patient516,patient516,T516,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T516_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T516_2.fastq.gz,Lee,ILLUMINA
+patient517,patient517,T517,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T517_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T517_2.fastq.gz,Lee,ILLUMINA
+patient518,patient518,T518,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T518_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T518_2.fastq.gz,Lee,ILLUMINA
+patient520,patient520,T520,tumor,rg1,Not Specified,/scratch/groups/carilee/col11a1-wes/wes-data/T520_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/T520_2.fastq.gz,Lee,ILLUMINA
+patient1,patient1-PD,TPD1,tumor,A470021,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD1_2.fastq.gz,South,ILLUMINA
+patient10,patient10-PD,TPD10,tumor,A470030,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD10_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD10_2.fastq.gz,South,ILLUMINA
+patient2,patient2-PD,TPD2,tumor,A470022,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD2_2.fastq.gz,South,ILLUMINA
+patient3,patient3-PD,TPD3,tumor,A470023,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD3_2.fastq.gz,South,ILLUMINA
+patient4,patient4-PD,TPD4,tumor,A470024,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD4_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD4_2.fastq.gz,South,ILLUMINA
+patient5,patient5-PD,TPD5,tumor,A470025,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD5_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD5_2.fastq.gz,South,ILLUMINA
+patient6,patient6-PD,TPD6,tumor,A470026,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD6_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD6_2.fastq.gz,South,ILLUMINA
+patient7,patient7-PD,TPD7,tumor,A470027,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD7_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD7_2.fastq.gz,South,ILLUMINA
+patient8,patient8-PD,TPD8,tumor,A470028,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD8_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD8_2.fastq.gz,South,ILLUMINA
+patient9,patient9-PD,TPD9,tumor,A470029,Poor,/scratch/groups/carilee/col11a1-wes/wes-data/TPD9_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TPD9_2.fastq.gz,South,ILLUMINA
+patient1,patient1-WD,TWD1,tumor,A470001,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD1_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD1_2.fastq.gz,South,ILLUMINA
+patient10,patient10-WD,TWD10,tumor,A470010,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD10_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD10_2.fastq.gz,South,ILLUMINA
+patient2,patient2-WD,TWD2,tumor,A470002,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD2_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD2_2.fastq.gz,South,ILLUMINA
+patient3,patient3-WD,TWD3,tumor,A470003,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD3_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD3_2.fastq.gz,South,ILLUMINA
+patient4,patient4-WD,TWD4,tumor,A470004,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD4_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD4_2.fastq.gz,South,ILLUMINA
+patient5,patient5-WD,TWD5,tumor,A470005,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD5_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD5_2.fastq.gz,South,ILLUMINA
+patient6,patient6-WD,TWD6,tumor,A470006,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD6_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD6_2.fastq.gz,South,ILLUMINA
+patient7,patient7-WD,TWD7,tumor,A470007,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD7_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD7_2.fastq.gz,South,ILLUMINA
+patient8,patient8-WD,TWD8,tumor,A470008,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD8_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD8_2.fastq.gz,South,ILLUMINA
+patient9,patient9-WD,TWD9,tumor,A470009,Well,/scratch/groups/carilee/col11a1-wes/wes-data/TWD9_1.fastq.gz,/scratch/groups/carilee/col11a1-wes/wes-data/TWD9_2.fastq.gz,South,ILLUMINA

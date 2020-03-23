@@ -6,7 +6,7 @@
         "ncpus" : 1,
         "mem" : "1G",
         "partition" : "normal",
-        "out" : "/scratch/users/tbencomo/logs/slurm-{jobid}.out"
+        "out" : "/scratch/users/tbencomo/logs/col11a1-wes/slurm-{jobid}.out"
     },
     "combine_fqs" :
     {
@@ -70,8 +70,7 @@
     },
     "mutect2" :
     {
-        "time" : "20:00:00",
-        "ncpus" : 4,
+        "time" : "24:00:00",
         "mem" : "32G"
     },
     "pileup_summaries" :
@@ -112,9 +111,8 @@
     },
     "mutect2_pon" :
     {
-        "time" : "20:00:00",
-        "ncpus" : 4,
-        "mem" : "20G"
+        "time" : "24:00:00",
+        "mem" : "32G"
     },
     "gather_variants" :
     {
