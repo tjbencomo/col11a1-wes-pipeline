@@ -27,6 +27,8 @@ vep_fasta: /home/groups/carilee/refs/vep_data/Homo_sapiens.GRCh38.dna.primary_as
 assembly_version: GRCh38
 # Value for Center field in the combined MAF
 center_name: lee-lab
+# Overriden Transcript Isoforms
+alternate_isoforms: overriden-ensts
 
 # Panel of Normal (PON)
 # Use PON with Mutect2 for variant calling
