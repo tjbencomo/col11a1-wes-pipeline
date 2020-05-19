@@ -1,5 +1,6 @@
-# ngs-pipeline
-NGS pipeline for calling somatic variants from paired end (PE) whole exome sequencing (WES) data using GATK Best Practices and Mutect2
+# col11a1-wes-pipeline
+NGS pipeline for calling somatic variants from paired end (PE) whole exome sequencing (WES) data using GATK Best Practices and Mutect2. This pipeline was used to call somatic variants for "Increased neoplastic invasion by non-cell autonomous mutant collagen COL11A1" by Lee et. al. 2020. Reads were aligned to hg38. Hg38 reference files came from the Broad's GATK Resource
+Bundle. 
 
 ## Author
 * Tomas Bencomo ([https://tjbencomo.github.io](https://tjbencomo.github.io))
@@ -13,20 +14,8 @@ You'll also need the `cache` files for
 [Variant Annotation Predictor (VEP)](https://github.com/Ensembl/ensembl-vep).
 Follow the tutorial 
 [here](https://uswest.ensembl.org/info/docs/tools/vep/script/vep_cache.html#cache) 
-to download the data files.
+to download the data files. Install version 99.
 Don't forget to index the files before running the pipeline.
-## Setup
-
-1. Create a new Github repository using this workflow as a template with the `Use this template` button
-at the top of this page. This will allow you to track any changes made to the analysis with `git`
-2. Clone the repository to the machine where you want to perform data analysis
-3. Edit `patients.csv` and `units.csv` with the details for your analysis.
-See the `schemas/` directory for details about each file.
-4. Configure `config.yml`. See `schemas/config.schema.yaml` for info about each required field. 
-There should be normal and tumor samples for each patient. 
-Each patient should have at least two rows in `units`, one normal row and one tumor row. 
-Multiplexed samples should be differentiated with the `readgroup` column.
-Sequencing data must be paired, so both `fq1` and `fq2` are required.
 
 ## Usage
 After finishing the setup and enabling the `conda` environment, inside the analysis directory with
@@ -129,15 +118,5 @@ Check the sequence identifiers if you encounter a `Aligned record iterator is be
 ## Citations
 This pipeline is based on `dna-seq-gatk-variant-calling` by 
 [Johannes Köster](https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling).
-If you use this pipeline, make sure to cite references for all of the tools used in the workflow:
-```
-snakemake
-gatk
-samtools
-mosdepth
-fastqc
-multiqc
-vep
-vcf2maf
-```
-Citations to be added...
+See [here](https://github.com/tjbencomo/ngs-pipeline/blob/master/citations.md) 
+for a list of software used in this pipeline.
