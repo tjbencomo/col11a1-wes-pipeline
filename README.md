@@ -1,9 +1,16 @@
 # col11a1-wes-pipeline
-NGS pipeline for calling somatic variants from paired end (PE) whole exome sequencing (WES) data using GATK Best Practices and Mutect2. This pipeline was used to call somatic variants for "Increased neoplastic invasion by non-cell autonomous mutant collagen COL11A1" by Lee et. al. 2020. Reads were aligned to hg38. Hg38 reference files came from the Broad's GATK Resource
-Bundle. 
+Pipeline used to call somatic variants for "Increased neoplastic invasion by non-cell autonomous mutant collagen COL11A1" by Lee et. al. 2020. 
 
-## Author
-* Tomas Bencomo ([https://tjbencomo.github.io](https://tjbencomo.github.io))
+## Summary
+### Preprocessing
+Reads were aligned to the hg38 reference genome using BWA-MEM and marked for duplicates using GATK MarkDuplicates.
+Reads then underwent base quality score recalibration using GATK BaseRecalibrator. Hg38 reference files were downloaded
+from the Broad's GATK Resource Bundle.
+
+### Somatic Variant Calling
+Normal samples were used to create a Panel of Normals (PON) using GATK Mutect2 in tumor only mode and GATK CreateSomaticPanelOfNormals. Variants were then called using Mutect2 in tumor matched normal mode. Variants
+called by Mutect2 were filtered by GATK FilterMutectCalls to avoid false positives. Variants that passed filtering
+were annotated using VEP and VCF2MAF. 
 
 ## Prerequisites
 Before you start setting up the pipeline, make sure you have your reference genome assembled.
