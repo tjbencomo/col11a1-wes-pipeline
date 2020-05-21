@@ -12,6 +12,10 @@ Normal samples were used to create a Panel of Normals (PON) using GATK Mutect2 i
 called by Mutect2 were filtered by GATK FilterMutectCalls to avoid false positives. Variants that passed filtering
 were annotated using VEP and VCF2MAF. 
 
+The pipeline aggregates mutations from each SCC and saves them to `variants.maf`.
+`variants.maf` was renamed `lee.maf` for downstream analysis to avoid confusion with the other callsets
+(Pickering and Durinck).
+
 ## Prerequisites
 Before you start setting up the pipeline, make sure you have your reference genome assembled.
 The GRCh38 (hg38) genome is available on the Broad's
