@@ -1,5 +1,5 @@
 # col11a1-wes-pipeline
-Pipeline used to call somatic variants for "Mutant collagen COL11A1 enhances invasive cancer" by Lee et. al. 2020. 
+Pipeline used to call somatic variants for "Mutant collagen COL11A1 enhances invasive cancer" by Lee et. al. 2021. 
 
 ## Summary
 ### Preprocessing
